@@ -1,0 +1,41 @@
+# ==== Núcleo do agente (sempre necessários) ====
+python-dotenv==1.0.1
+langchain==0.3.7
+langgraph==0.2.39
+typer==0.12.5
+pydantic==2.9.2
+rich==13.8.1
+
+# ==== Providers de LLM (descomente só o que for usar) ====
+
+# --- OpenAI ---
+# langchain-openai  # Integração oficial OpenAI + LangChain
+
+# --- Groq (llama-3.x / etc) ---
+langchain-groq  # Integração oficial Groq + LangChain
+# groq  # SDK nativo da Groq (opcional)
+
+# --- Ollama (modelos locais) ---
+# langchain-ollama  # Integração oficial Ollama + LangChain
+
+# --- Microsoft / Azure AI Foundry ---
+# langchain-azure-ai  # Integração Azure AI Foundry / Azure OpenAI
+
+# --- Hugging Face ---
+# langchain-huggingface  # Integração Hugging Face + LangChain
+
+# --- AWS / Amazon (Bedrock, etc.) ---
+# langchain-aws  # Integração AWS Bedrock + LangChain
+# boto3  # SDK AWS (opcional)
+
+# --- Google (Gemini / Google AI) ---
+# langchain-google-genai  # Integração Google Gemini + LangChain
+
+# --- Anthropic (Claude) ---
+# langchain-anthropic  # Integração Anthropic Claude + LangChain
+
+# --- DeepSeek ---
+# langchain-deepseek  # Integração DeepSeek + LangChain
+
+# --- Grok (xAI) ---
+# langchain-xai  # Integração Grok/xAI + LangChain
