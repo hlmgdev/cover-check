@@ -1,41 +1,42 @@
 # ==== Núcleo do agente (sempre necessários) ====
 python-dotenv==1.0.1
-langchain==0.3.7
-langgraph==0.2.39
+langchain>=1.0.0  # Versão 1.0+ suporta numpy 2.x para Python 3.13
+langchain-core>=0.3.15
+langchain-community>=0.3.0
+langgraph>=0.2.39
 typer==0.12.5
 pydantic==2.9.2
 rich==13.8.1
 
 # ==== Providers de LLM (descomente só o que for usar) ====
 
-# --- OpenAI ---
-# langchain-openai  # Integração oficial OpenAI + LangChain
+# --- Groq (llama-3.x / etc) - RECOMENDADO PARA COMEÇAR ---
+langchain-groq>=1.0.0  # Integração oficial Groq + LangChain
 
-# --- Groq (llama-3.x / etc) ---
-langchain-groq  # Integração oficial Groq + LangChain
-# groq  # SDK nativo da Groq (opcional)
+# --- OpenAI ---
+# langchain-openai>=0.2.0  # Integração oficial OpenAI + LangChain
 
 # --- Ollama (modelos locais) ---
-# langchain-ollama  # Integração oficial Ollama + LangChain
+# langchain-ollama>=0.2.0  # Integração oficial Ollama + LangChain
 
 # --- Microsoft / Azure AI Foundry ---
-# langchain-azure-ai  # Integração Azure AI Foundry / Azure OpenAI
+# langchain-azure-ai>=0.1.0  # Integração Azure AI Foundry / Azure OpenAI
 
 # --- Hugging Face ---
-# langchain-huggingface  # Integração Hugging Face + LangChain
+# langchain-huggingface>=0.1.0  # Integração Hugging Face + LangChain
 
 # --- AWS / Amazon (Bedrock, etc.) ---
-# langchain-aws  # Integração AWS Bedrock + LangChain
-# boto3  # SDK AWS (opcional)
+# langchain-aws>=0.2.0  # Integração AWS Bedrock + LangChain
+# boto3>=1.35.0  # SDK AWS (opcional)
 
 # --- Google (Gemini / Google AI) ---
-# langchain-google-genai  # Integração Google Gemini + LangChain
+# langchain-google-genai>=2.0.0  # Integração Google Gemini + LangChain
 
 # --- Anthropic (Claude) ---
-# langchain-anthropic  # Integração Anthropic Claude + LangChain
+# langchain-anthropic>=0.2.0  # Integração Anthropic Claude + LangChain
 
 # --- DeepSeek ---
-# langchain-deepseek  # Integração DeepSeek + LangChain
+# langchain-deepseek>=0.1.0  # Integração DeepSeek + LangChain
 
 # --- Grok (xAI) ---
-# langchain-xai  # Integração Grok/xAI + LangChain
+# langchain-xai>=0.1.0  # Integração Grok/xAI + LangChain
